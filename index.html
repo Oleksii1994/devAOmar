@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devAOmar company website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header class="section">
+      <div class="header-container">
+        <a href="./index.html" class="logo"
+          ><img
+            src="./images/Logo-dark.png"
+            alt="logo"
+            width="480"
+            height="120"
+        /></a>
+        <div class="nav-container">
+          <nav>
+            <a href="./index.html">Home</a>
+            <a href="./">About</a>
+          </nav>
+          <ul class="socials-list">
+            <li class="social-item">
+              <svg width="24" height="24">
+                <use
+                  href="./images/symbol-defs.svg#icon-instagram"
+                  class="social-icon"
+                ></use>
+              </svg>
+            </li>
+            <li class="social-item">
+              <svg width="24" height="24">
+                <use
+                  href="./images/symbol-defs.svg#icon-linkedin"
+                  class="social-icon"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section section">
+        <div class="neon-sphere-first"></div>
+        <div
+          class="neon-sphere-two"
+          data-aos="zoom-in-up"
+          data-aos-delay="2200"
+          data-aos-duration="3000"
+        ></div>
+
+        <div>
+          <h1 class="main-title">Вітаємо в devAOmar</h1>
+          <!-- <p class="hero-slogan">Ваш успіх - наша мета</p> -->
+          <div
+            class="primary-btn-box"
+            data-aos="fade-in"
+            data-aos-delay="3000"
+            data-aos-duration="3000"
+          >
+            <button type="button" class="primary-btn" id="updateDetails">
+              Замовити консультацію
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mission-section">
+        <h2 class="title visually-hidden">Наша місія</h2>
+        <h3 class="subtitle">Ваш успіх — це наша мета</h3>
+        <p class="mission-text text">
+          Ми тут для того, щоб допомогти вам реалізувати ваші найамбітніші ідеї
+          в цифровому світі. Від розробки інтуїтивно зрозумілих вебсайтів до
+          розробки стратегій цифрового маркетингу, ми попіклуємось, щоб ви
+          вирізнялись і завжди були на хвилі сучасності
+        </p>
+      </section>
+      <section class="features-section">
+        <h2 class="visually-hidden">Наші переваги</h2>
+        <h3 class="features-subtitle subtitle">Ми пропонуємо вам</h3>
+        <ul class="features-list">
+          <li class="features-item">
+            <div class="item-bgr">
+              <h4 class="features-card-title">Інноваційні Технології</h4>
+              <p class="features-text">
+                Використання передових технологій і фокусування на створенні
+                швидких, надійних і безпечних сайтів, які допоможуть вам
+                вирізнятися на тлі конкурентів.
+              </p>
+            </div>
+          </li>
+          <li class="features-item">
+            <div class="item-bgr">
+              <h4 class="features-card-title">Креативний Підхід</h4>
+              <p class="features-text">
+                Розробка унікальних, естетично привабливих дизайнів, що
+                відповідають сучасним трендам, привертають увагу та забезпечують
+                незабутній користувацький досвід.
+              </p>
+            </div>
+          </li>
+          <li class="features-item">
+            <div class="item-bgr">
+              <h4 class="features-card-title">Підтримка та Оптимізація</h4>
+
+              <p class="features-text">
+                Ми надаємо повний спектр послуг післязапускової підтримки,
+                включаючи SEO оптимізацію, контент-менеджмент, а також регулярні
+                оновлення безпеки.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section></section>
+    </main>
+    <dialog id="favDialog" class="dialog">
+      <form action="submit" id="form" class="contact-form">
+        <p>Залиште ваші контакти і ми обов'язково з вами зв'яжемось</p>
+
+        <div class="input-container">
+          <label for="name" class="input-label">Ім'я:</label>
+          <input type="text" id="name" name="name" class="input" required />
+        </div>
+        <div class="input-container">
+          <label for="phone" class="input-label">Номер телефону:</label>
+          <input type="tel" id="phone" name="phone" class="input" required />
+        </div>
+        <div class="input-container">
+          <label for="comment" class="input-label"
+            >Коментар (необов'язково):</label
+          >
+          <textarea id="comment" name="comment" class="comment"></textarea>
+        </div>
+        <div>
+          <button type="button" id="close" class="close-btn">
+            <svg width="24" height="24">
+              <use
+                href="./images/symbol-defs.svg#icon-close"
+                class="social-icon"
+              ></use>
+            </svg>
+          </button>
+          <button type="button" id="reset" class="form-button">Скинути</button>
+
+          <button type="submit" id="favDialog" class="form-button">
+            Відправити
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="app"></div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
